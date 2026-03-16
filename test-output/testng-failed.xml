@@ -5,8 +5,9 @@
     <classes>
       <class name="com.profile.tests.ProfileTest">
         <methods>
+          <include name="testProfileStatus_Four"/>
+          <include name="goHome"/>
           <include name="tearDown"/>
-          <include name="testProfileStatus_ForTwoUsers" invocation-numbers="1"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.profile.tests.ProfileTest -->

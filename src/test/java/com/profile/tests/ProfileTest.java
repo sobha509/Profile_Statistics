@@ -15,22 +15,22 @@ import com.profile.pages.ResultsPage;
 import com.profile.utils.SingleRowExcelReader;
 
 /**
- * Reads EXACTLY two rows and runs the flow once per row.
- * File must be at: src/test/resources/PersonData_Two.xlsx
- * Sheet name: Person
+ * Runs once per row in Corrected_PersonData_FourUsers.xlsx (4 users).
+ * Excel must be at: src/test/resources/testdata/Corrected_PersonData_FourUsers.xlsx
+ * Sheet: Person
  */
 public class ProfileTest extends TestBase {
 
-    @DataProvider(name = "twoUsers", parallel = false)
-    public Iterator<Object[]> twoUsers() {
+    @DataProvider(name = "fourUsers", parallel = false)
+    public Iterator<Object[]> fourUsers() {
         try {
-            String file = "src/test/resources/PersonData_Two.xlsx"; // ensure this exists
-            Object[][] data = SingleRowExcelReader.readExactlyTwoRows(file, "Person");
+            Object[][] data = SingleRowExcelReader.readExactlyFourRows(
+                    "testdata/PersonData_Four_corrected.xlsx", "Person"
+            );
 
-            if (data == null || data.length != 2) {
-                throw new SkipException("Expected exactly 2 rows, got " + (data == null ? 0 : data.length));
+            if (data == null || data.length != 4) {
+                throw new SkipException("Expected exactly 4 rows, got " + (data == null ? 0 : data.length));
             }
-            // Convert Object[][] to Iterator<Object[]>
             return Arrays.asList(data).iterator();
 
         } catch (SkipException se) {
@@ -41,29 +41,29 @@ public class ProfileTest extends TestBase {
         }
     }
 
-    /**
-     * Each invocation uses: years, websites, apps, expectedStatus, expectedPersona
-     */
-    @Test(dataProvider = "twoUsers", description = "Validate status for exactly two Excel rows")
-    public void testProfileStatus_ForTwoUsers(String years,
-                                              int websites,
-                                              int apps,
-                                              String expectedStatus,
-                                              String expectedPersona /* optional */) {
+    @Test(dataProvider = "fourUsers", description = "Validate status for four Excel rows")
+    public void testProfileStatus_Four(String years,
+                                       int websites,
+                                       int apps,
+                                       String expectedStatus,
+                                       String expectedPersona /* optional */) {
 
         System.out.printf("RUN => years=%s, websites=%d, apps=%d, expected=%s%n",
                 years, websites, apps, expectedStatus);
 
-        // 1) POM flow
+        // 1) Navigate to input form (your POM)
         LandingPage landing = new LandingPage(driver, wait);
-        InputFormPage form  = landing.clickGetInsights(); // ensure your POM waits for form load
+        InputFormPage form  = landing.clickGetInsights();
 
+        // 2) Fill and submit
         form.selectYears(years);
         form.enterWebsites(websites);
         form.enterApps(apps);
 
-        ResultsPage result = form.clickMeasure();
-        String actualStatus = result.getStatus();
+        ResultsPage results = form.clickMeasure();
+
+        // 3) Assert
+        String actualStatus = results.getStatus();
         System.out.println("STATUS = " + actualStatus);
 
         Assert.assertTrue(
@@ -71,8 +71,8 @@ public class ProfileTest extends TestBase {
             "Expected Status: " + expectedStatus + " | Actual: " + actualStatus
         );
 
-        // OPTIONAL: If you have getPersona() in ResultsPage:
-        // String actualPersona = result.getPersona();
+        // OPTIONAL persona assert (enable if you added ResultsPage.getPersona())
+        // String actualPersona = results.getPersona();
         // Assert.assertTrue(
         //     actualPersona.toLowerCase().contains(expectedPersona.toLowerCase()),
         //     "Expected Persona: " + expectedPersona + " | Actual: " + actualPersona
