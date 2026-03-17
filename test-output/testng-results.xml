@@ -1,28 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-17T15:15:52 IST" name="Suite" finished-at="2026-03-17T15:16:08 IST" duration-ms="16159">
+  <suite started-at="2026-03-17T17:28:24 IST" name="Suite" finished-at="2026-03-17T17:28:45 IST" duration-ms="20331">
     <groups>
     </groups>
-    <test started-at="2026-03-17T15:15:52 IST" name="Test" finished-at="2026-03-17T15:16:08 IST" duration-ms="16159">
+    <test started-at="2026-03-17T17:28:24 IST" name="Test" finished-at="2026-03-17T17:28:45 IST" duration-ms="20331">
       <class name="com.profile.tests.ProfileTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.profile.tests.ProfileTest@22ff4249]" started-at="2026-03-17T15:15:52 IST" name="setUp" finished-at="2026-03-17T15:15:58 IST" duration-ms="6139" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:24 IST" name="setUp" finished-at="2026-03-17T17:28:27 IST" duration-ms="2936" status="PASS">
           <params>
             <param index="0">
               <value>
                 <![CDATA[]]>
               </value>
             </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="goHome()[pri:0, instance:com.profile.tests.ProfileTest@22ff4249]" started-at="2026-03-17T15:15:59 IST" name="goHome" finished-at="2026-03-17T15:15:59 IST" duration-ms="109" status="PASS">
+        <test-method is-config="true" signature="goHome()[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:27 IST" name="goHome" finished-at="2026-03-17T17:28:28 IST" duration-ms="354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goHome -->
-        <test-method signature="testProfileStatus_Four(java.lang.String,int,int,java.lang.String,java.lang.String)[pri:0, instance:com.profile.tests.ProfileTest@22ff4249]" started-at="2026-03-17T15:15:59 IST" name="testProfileStatus_Four" description="Validate status for four Excel rows" data-provider="fourUsers" finished-at="2026-03-17T15:16:00 IST" duration-ms="844" status="PASS">
+        <test-method signature="testInvalidYears()[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:28 IST" name="testInvalidYears" finished-at="2026-03-17T17:28:28 IST" duration-ms="681" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidYears -->
+        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:28 IST" name="takeScreenshot" finished-at="2026-03-17T17:28:29 IST" duration-ms="434" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidYears status=SUCCESS method=ProfileTest.testInvalidYears()[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshot -->
+        <test-method is-config="true" signature="goHome()[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:29 IST" name="goHome" finished-at="2026-03-17T17:28:29 IST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method signature="testNonNumericWebsites()[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:29 IST" name="testNonNumericWebsites" finished-at="2026-03-17T17:28:30 IST" duration-ms="1179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNonNumericWebsites -->
+        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:30 IST" name="takeScreenshot" finished-at="2026-03-17T17:28:30 IST" duration-ms="350" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testNonNumericWebsites status=SUCCESS method=ProfileTest.testNonNumericWebsites()[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshot -->
+        <test-method is-config="true" signature="goHome()[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:32 IST" name="goHome" finished-at="2026-03-17T17:28:32 IST" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method signature="testProfileStatus_Four(java.lang.String,int,int,java.lang.String,java.lang.String)[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:32 IST" name="testProfileStatus_Four" data-provider="fourUsers" finished-at="2026-03-17T17:28:33 IST" duration-ms="1249" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -53,22 +96,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProfileStatus_Four -->
-        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.profile.tests.ProfileTest@22ff4249]" started-at="2026-03-17T15:16:00 IST" name="takeScreenshot" finished-at="2026-03-17T15:16:01 IST" duration-ms="997" status="PASS">
+        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:33 IST" name="takeScreenshot" finished-at="2026-03-17T17:28:34 IST" duration-ms="777" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testProfileStatus_Four status=SUCCESS method=ProfileTest.testProfileStatus_Four(java.lang.String,int,int,java.lang.String,java.lang.String)[pri:0, instance:com.profile.tests.ProfileTest@22ff4249] output={null}]]]>
+                <![CDATA[[TestResult name=testProfileStatus_Four status=SUCCESS method=ProfileTest.testProfileStatus_Four(java.lang.String,int,int,java.lang.String,java.lang.String)[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshot -->
-        <test-method is-config="true" signature="goHome()[pri:0, instance:com.profile.tests.ProfileTest@22ff4249]" started-at="2026-03-17T15:16:01 IST" name="goHome" finished-at="2026-03-17T15:16:01 IST" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="goHome()[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:34 IST" name="goHome" finished-at="2026-03-17T17:28:34 IST" duration-ms="118" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goHome -->
-        <test-method signature="testProfileStatus_Four(java.lang.String,int,int,java.lang.String,java.lang.String)[pri:0, instance:com.profile.tests.ProfileTest@22ff4249]" started-at="2026-03-17T15:16:01 IST" name="testProfileStatus_Four" description="Validate status for four Excel rows" data-provider="fourUsers" finished-at="2026-03-17T15:16:02 IST" duration-ms="653" status="PASS">
+        <test-method signature="testProfileStatus_Four(java.lang.String,int,int,java.lang.String,java.lang.String)[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:34 IST" name="testProfileStatus_Four" data-provider="fourUsers" finished-at="2026-03-17T17:28:35 IST" duration-ms="709" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -99,22 +142,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProfileStatus_Four -->
-        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.profile.tests.ProfileTest@22ff4249]" started-at="2026-03-17T15:16:02 IST" name="takeScreenshot" finished-at="2026-03-17T15:16:02 IST" duration-ms="452" status="PASS">
+        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:35 IST" name="takeScreenshot" finished-at="2026-03-17T17:28:35 IST" duration-ms="402" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testProfileStatus_Four status=SUCCESS method=ProfileTest.testProfileStatus_Four(java.lang.String,int,int,java.lang.String,java.lang.String)[pri:0, instance:com.profile.tests.ProfileTest@22ff4249] output={null}]]]>
+                <![CDATA[[TestResult name=testProfileStatus_Four status=SUCCESS method=ProfileTest.testProfileStatus_Four(java.lang.String,int,int,java.lang.String,java.lang.String)[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshot -->
-        <test-method is-config="true" signature="goHome()[pri:0, instance:com.profile.tests.ProfileTest@22ff4249]" started-at="2026-03-17T15:16:02 IST" name="goHome" finished-at="2026-03-17T15:16:03 IST" duration-ms="117" status="PASS">
+        <test-method is-config="true" signature="goHome()[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:35 IST" name="goHome" finished-at="2026-03-17T17:28:35 IST" duration-ms="113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goHome -->
-        <test-method signature="testProfileStatus_Four(java.lang.String,int,int,java.lang.String,java.lang.String)[pri:0, instance:com.profile.tests.ProfileTest@22ff4249]" started-at="2026-03-17T15:16:03 IST" name="testProfileStatus_Four" description="Validate status for four Excel rows" data-provider="fourUsers" finished-at="2026-03-17T15:16:04 IST" duration-ms="1427" status="PASS">
+        <test-method signature="testProfileStatus_Four(java.lang.String,int,int,java.lang.String,java.lang.String)[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:35 IST" name="testProfileStatus_Four" data-provider="fourUsers" finished-at="2026-03-17T17:28:36 IST" duration-ms="739" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -145,22 +188,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProfileStatus_Four -->
-        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.profile.tests.ProfileTest@22ff4249]" started-at="2026-03-17T15:16:04 IST" name="takeScreenshot" finished-at="2026-03-17T15:16:05 IST" duration-ms="566" status="PASS">
+        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:36 IST" name="takeScreenshot" finished-at="2026-03-17T17:28:37 IST" duration-ms="438" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testProfileStatus_Four status=SUCCESS method=ProfileTest.testProfileStatus_Four(java.lang.String,int,int,java.lang.String,java.lang.String)[pri:0, instance:com.profile.tests.ProfileTest@22ff4249] output={null}]]]>
+                <![CDATA[[TestResult name=testProfileStatus_Four status=SUCCESS method=ProfileTest.testProfileStatus_Four(java.lang.String,int,int,java.lang.String,java.lang.String)[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshot -->
-        <test-method is-config="true" signature="goHome()[pri:0, instance:com.profile.tests.ProfileTest@22ff4249]" started-at="2026-03-17T15:16:05 IST" name="goHome" finished-at="2026-03-17T15:16:05 IST" duration-ms="103" status="PASS">
+        <test-method is-config="true" signature="goHome()[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:37 IST" name="goHome" finished-at="2026-03-17T17:28:37 IST" duration-ms="130" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goHome -->
-        <test-method signature="testProfileStatus_Four(java.lang.String,int,int,java.lang.String,java.lang.String)[pri:0, instance:com.profile.tests.ProfileTest@22ff4249]" started-at="2026-03-17T15:16:05 IST" name="testProfileStatus_Four" description="Validate status for four Excel rows" data-provider="fourUsers" finished-at="2026-03-17T15:16:05 IST" duration-ms="674" status="PASS">
+        <test-method signature="testProfileStatus_Four(java.lang.String,int,int,java.lang.String,java.lang.String)[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:37 IST" name="testProfileStatus_Four" data-provider="fourUsers" finished-at="2026-03-17T17:28:37 IST" duration-ms="738" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -191,18 +234,56 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProfileStatus_Four -->
-        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.profile.tests.ProfileTest@22ff4249]" started-at="2026-03-17T15:16:05 IST" name="takeScreenshot" finished-at="2026-03-17T15:16:06 IST" duration-ms="616" status="PASS">
+        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:37 IST" name="takeScreenshot" finished-at="2026-03-17T17:28:38 IST" duration-ms="403" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=testProfileStatus_Four status=SUCCESS method=ProfileTest.testProfileStatus_Four(java.lang.String,int,int,java.lang.String,java.lang.String)[pri:0, instance:com.profile.tests.ProfileTest@22ff4249] output={null}]]]>
+                <![CDATA[[TestResult name=testProfileStatus_Four status=SUCCESS method=ProfileTest.testProfileStatus_Four(java.lang.String,int,int,java.lang.String,java.lang.String)[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- takeScreenshot -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.profile.tests.ProfileTest@22ff4249]" started-at="2026-03-17T15:16:06 IST" name="tearDown" finished-at="2026-03-17T15:16:08 IST" duration-ms="1830" status="PASS">
+        <test-method is-config="true" signature="goHome()[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:38 IST" name="goHome" finished-at="2026-03-17T17:28:38 IST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method signature="testZeroApps()[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:38 IST" name="testZeroApps" finished-at="2026-03-17T17:28:39 IST" duration-ms="1269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testZeroApps -->
+        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:39 IST" name="takeScreenshot" finished-at="2026-03-17T17:28:40 IST" duration-ms="462" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testZeroApps status=SUCCESS method=ProfileTest.testZeroApps()[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshot -->
+        <test-method is-config="true" signature="goHome()[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:40 IST" name="goHome" finished-at="2026-03-17T17:28:40 IST" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goHome -->
+        <test-method signature="testZeroWebsites()[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:40 IST" name="testZeroWebsites" finished-at="2026-03-17T17:28:41 IST" duration-ms="794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testZeroWebsites -->
+        <test-method is-config="true" signature="takeScreenshot(org.testng.ITestResult)[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:41 IST" name="takeScreenshot" finished-at="2026-03-17T17:28:41 IST" duration-ms="523" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testZeroWebsites status=SUCCESS method=ProfileTest.testZeroWebsites()[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreenshot -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.profile.tests.ProfileTest@6150c3ec]" started-at="2026-03-17T17:28:41 IST" name="tearDown" finished-at="2026-03-17T17:28:45 IST" duration-ms="3543" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
