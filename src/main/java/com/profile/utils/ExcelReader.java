@@ -18,7 +18,7 @@ import java.io.InputStream;
  * Returns Object[][] for TestNG DataProviders:
  *   { years(String), websites(int), apps(int), expectedStatus(String), expectedPersona(String) }
  */
-public class SingleRowExcelReader {
+public class ExcelReader {
 
     public static Object[][] readExactlyFourRows(String resourceName, String sheetName) {
         InputStream is = null;
