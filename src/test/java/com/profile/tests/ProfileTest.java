@@ -9,6 +9,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.profile.core.TestBase;
+import com.profile.core.TestBase;
 import com.profile.pages.InputFormPage;
 import com.profile.pages.LandingPage;
 import com.profile.pages.ResultsPage;
